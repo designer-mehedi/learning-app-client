@@ -67,7 +67,8 @@ const Header = () => {
 							</>
 						)}
 					</Nav>
-					{user?.email && <span>Welcome{user?.email}</span>}
+					{/* {user?.uid && <span>Welcome{user?.uid}</span>} */}
+					{user?.uid && <img className="ms-2" width={30} src={user?.photoURL} alt="" />}
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

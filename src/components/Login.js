@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../contexts/UserContext";
 
 const Login = () => {
@@ -53,6 +54,8 @@ const Login = () => {
 					<Button variant="primary" className="w-100" type="submit">
 						Login
 					</Button>
+                    <p>New User? <Link to="/register">Create an account</Link></p>
+                   
 				</Form>
 			</Container>
 		</div>
