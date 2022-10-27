@@ -43,25 +43,24 @@ const Header = () => {
 							Blog
 						</Link>
 						{user?.uid ? (
-							<button onClick={logOut}>Log Out</button>
+							<button className="btn btn-primary" onClick={logOut}>Log Out</button>
 						) : (
 							<>
 								<Link
 									to="/login"
-									className="text-decoration-none me-5 text-black"
+									className="text-decoration-none me-5 btn btn-primary"
 								>
 									Login
 								</Link>
 								<Link
 									to="/register"
-									className="text-decoration-none text-black"
+									className="text-decoration-none btn btn-primary"
 								>
 									Sign Up
 								</Link>
 							</>
 						)}
 					</Nav>
-					{/* {user?.uid && <span>Welcome{user?.uid}</span>} */}
 					{user?.uid && <img className="ms-2" width={30} src={user?.photoURL} alt="" />}
 				</Navbar.Collapse>
 			</Container>
