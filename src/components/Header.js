@@ -60,8 +60,8 @@ const Header = () => {
 								</Link>
 							</>
 						)}
-					</Nav>
 					{user?.uid && <img className="ms-2" width={30} src={user?.photoURL} alt="" />}
+					</Nav>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>
