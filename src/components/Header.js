@@ -48,7 +48,7 @@ const Header = () => {
 							<>
 								<Link
 									to="/login"
-									className="text-decoration-none me-5 btn btn-primary"
+									className="login text-decoration-none me-5 btn btn-primary"
 								>
 									Login
 								</Link>

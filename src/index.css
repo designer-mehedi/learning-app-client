@@ -39,3 +39,15 @@ code {
 .course-container {
   height: 100%;
 }
+
+@media screen and (max-width: 576px) {
+  .form {
+      width: 100%;
+    }
+    nav a {
+      margin-bottom: 12px;
+    }
+    .login {
+      width: 100%;
+    }
+}
