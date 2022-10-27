@@ -15,17 +15,18 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
+		const name = form.name.value; 
         const email = form.email.value;
         const password = form.password.value;
         form.reset();
-        console.log(email, password); 
+        console.log(name, email, password); 
 
         createUser(email, password)
         .then(result => {
             const user = result.user; 
             console.log('Registered', user); 
         })
-        .catch(error => console.error(error))
+        .catch(error => console.error(error));
     }
 
     const handleGoogle = () => {

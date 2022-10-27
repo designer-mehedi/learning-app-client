@@ -4,7 +4,6 @@ import Blog from "../components/Blog";
 import Courses from "../components/Courses";
 import ErrorPage from "../components/ErrorPage";
 import FAQ from "../components/FAQ";
-import Home from "../components/Home";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import Title from "../components/Title";
@@ -16,22 +15,29 @@ export const router = createBrowserRouter([
 		element: <Layout />,
 		children: [
 			{
-				path: "/home",
-				element: <Home />,
+				path: "/",
+				loader: () =>
+					fetch(
+						"https://learning-app-server-designer-mehedi.vercel.app/courses"
+					),
+				element: <Courses />,
 			},
 			{
 				path: "/courses",
-				loader: () => fetch("http://localhost:5000/courses"),
+				loader: () =>
+					fetch(
+						"https://learning-app-server-designer-mehedi.vercel.app/courses"
+					),
 				element: <Courses />,
 			},
 			{
 				path: "/course",
 				element: <AllCourse />,
 			},
-            {
-                path: "/title",
-                element: <Title/>
-            },
+			{
+				path: "/title",
+				element: <Title />,
+			},
 			{
 				path: "/faq",
 				element: <FAQ />,

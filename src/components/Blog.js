@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
 const Blog = () => {
     return (
@@ -7,9 +7,10 @@ const Blog = () => {
 			<Container className="card-container py-5">
 				<Row className="mb-4">
 					<Col lg="6">
-						<Card>
+						<Card className="h-100">
 							<Card.Img
 								variant="top"
+								height="400"
 								src="https://www.keycdn.com/img/support/cors.png"
 							/>
 							<Card.Body>
@@ -19,7 +20,6 @@ const Blog = () => {
 									title and make up the bulk of the card's
 									content.
 								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -27,6 +27,7 @@ const Blog = () => {
 						<Card>
 							<Card.Img
 								variant="top"
+								height="400"
 								src="https://swoopnow.com/wp-content/uploads/2020/07/User-Authentication_-Understanding-the-Basics-Top-Tips.jpg"
 							/>
 							<Card.Body>
@@ -40,7 +41,6 @@ const Blog = () => {
 									title and make up the bulk of the card's
 									content.
 								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -50,6 +50,7 @@ const Blog = () => {
 						<Card>
 							<Card.Img
 								variant="top"
+								height="400"
 								src="https://i.ytimg.com/vi/99RWZsEITx4/maxresdefault.jpg"
 							/>
 							<Card.Body>
@@ -61,7 +62,6 @@ const Blog = () => {
 									title and make up the bulk of the card's
 									content.
 								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -69,6 +69,7 @@ const Blog = () => {
 						<Card>
 							<Card.Img
 								variant="top"
+								height="400"
 								src="https://lh3.googleusercontent.com/csXm00pBuJvmhsXcI1XauxFGrE66sHBbWI9QyKY0lt2h55a1VaKl6F5TrlH0wBC_aijloKw9lh8a=e14-rj-sc0xffffff-w1270"
 							/>
 							<Card.Body>
@@ -80,7 +81,6 @@ const Blog = () => {
 									title and make up the bulk of the card's
 									content.
 								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
 							</Card.Body>
 						</Card>
 					</Col>

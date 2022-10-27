@@ -13,13 +13,13 @@ const Courses = () => {
 			<Container className="course-container py-5">
 				<Row>
 					<Col lg="3">
-						<h2 className="mb-3">Courses</h2>
+						<h2 className="mb-4">Courses</h2>
 						{courses.map((title) => (
 							<Title title={title} key={title.id}></Title>
 						))}
 					</Col>
 					<Col lg="9">
-						<h2>Main</h2>
+						<h2 className="mb-4 text-center">Course Content</h2>
 						<Row>
 							{courses.map((course) => (
 								<AllCourse
