@@ -17,7 +17,7 @@ code {
 }
 
 .reg-form{
-  height: 800px;
+  height: 100%;
 }
 .form{
   width: 33%;
@@ -25,5 +25,17 @@ code {
 }
 
 .card-container{
+  height: 100%;
+}
+
+.error-text {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-container {
   height: 100%;
 }

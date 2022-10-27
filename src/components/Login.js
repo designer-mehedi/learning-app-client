@@ -26,8 +26,8 @@ const Login = () => {
 	};
 
 	return (
-		<div>
-			<Container className="reg-form d-flex">
+		<div className="reg-form py-5">
+			<Container className="d-flex py-5">
 				<Form
 					onSubmit={handleSubmit}
 					className="form m-auto border border-2 p-5"
@@ -54,8 +54,9 @@ const Login = () => {
 					<Button variant="primary" className="w-100" type="submit">
 						Login
 					</Button>
-                    <p>New User? <Link to="/register">Create an account</Link></p>
-                   
+					<p>
+						New User? <Link to="/register">Create an account</Link>
+					</p>
 				</Form>
 			</Container>
 		</div>

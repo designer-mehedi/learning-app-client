@@ -48,7 +48,7 @@ const Register = () => {
 
     return (
 		<div>
-			<Container className="reg-form d-flex">
+			<Container className="reg-form d-flex py-5">
 				<Form
 					onSubmit={handleSubmit}
 					className="form m-auto border border-2 p-5"
@@ -56,12 +56,20 @@ const Register = () => {
 					<Form.Text>
 						<h2 className="text-center mb-4">Register Now</h2>
 					</Form.Text>
-					<Form.Group className="mb-3" controlId="formBasicEmail">
-						<Form.Label>Name</Form.Label>
+					<Form.Group className="mb-3" controlId="formBasicName">
+						<Form.Label>Full Name</Form.Label>
 						<Form.Control
 							type="text"
 							name="name"
 							placeholder="Enter Name"
+						/>
+					</Form.Group>
+					<Form.Group className="mb-3" controlId="formBasicPhotoURL">
+						<Form.Label>Photo URL</Form.Label>
+						<Form.Control
+							type="text"
+							name="photoURL"
+							placeholder="Enter PhotoURL"
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3" controlId="formBasicEmail">

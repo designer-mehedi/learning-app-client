@@ -26,25 +26,25 @@ const Header = () => {
 					<Nav className="ms-auto fs-5">
 						<Link
 							to="/home"
-							className="text-decoration-none me-4 text-black"
+							className="text-decoration-none me-5 text-black"
 						>
 							Home
 						</Link>
 						<Link
 							to="/courses"
-							className="text-decoration-none me-4 text-black"
+							className="text-decoration-none me-5 text-black"
 						>
 							Courses
 						</Link>
 						<Link
 							to="/faq"
-							className="text-decoration-none me-4 text-black"
+							className="text-decoration-none me-5 text-black"
 						>
 							FAQ
 						</Link>
 						<Link
 							to="/blog"
-							className="text-decoration-none me-4 text-black"
+							className="text-decoration-none me-5 text-black"
 						>
 							Blog
 						</Link>
@@ -54,7 +54,7 @@ const Header = () => {
 							<>
 								<Link
 									to="/login"
-									className="text-decoration-none me-4 text-black"
+									className="text-decoration-none me-5 text-black"
 								>
 									Login
 								</Link>
