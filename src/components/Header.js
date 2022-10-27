@@ -73,6 +73,7 @@ const Header = () => {
 								</Link>
 							</>
 						)}
+						<button className="btn btn-dark ms-2">Theme Toggle</button>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
