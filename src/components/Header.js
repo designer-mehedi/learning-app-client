@@ -42,8 +42,21 @@ const Header = () => {
 						>
 							Blog
 						</Link>
+						{user?.uid && (
+							<img
+								className="ms-2"
+								width={30}
+								src={user?.photoURL}
+								alt=""
+							/>
+						)}
 						{user?.uid ? (
-							<button className="btn btn-primary" onClick={logOut}>Log Out</button>
+							<button
+								className="btn btn-primary"
+								onClick={logOut}
+							>
+								Log Out
+							</button>
 						) : (
 							<>
 								<Link
@@ -60,7 +73,6 @@ const Header = () => {
 								</Link>
 							</>
 						)}
-					{user?.uid && <img className="ms-2" width={30} src={user?.photoURL} alt="" />}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
