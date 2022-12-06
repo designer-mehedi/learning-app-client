@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AllCourse from "../components/AllCourse";
 import Blog from "../components/Blog";
+import CourseDetails from "../components/CourseDetails";
 import Courses from "../components/Courses";
 import ErrorPage from "../components/ErrorPage";
 import FAQ from "../components/FAQ";
@@ -18,7 +19,7 @@ export const router = createBrowserRouter([
 				path: "/",
 				loader: () =>
 					fetch(
-						"https://learning-app-server-designer-mehedi.vercel.app/courses"
+						"https://learning-app-server-khaki.vercel.app/courses"
 					),
 				element: <Courses />,
 			},
@@ -26,13 +27,21 @@ export const router = createBrowserRouter([
 				path: "/courses",
 				loader: () =>
 					fetch(
-						"https://learning-app-server-designer-mehedi.vercel.app/courses"
+						"https://learning-app-server-khaki.vercel.app/courses"
 					),
 				element: <Courses />,
 			},
 			{
 				path: "/course",
 				element: <AllCourse />,
+			},
+			{
+				path: "/course/:id",
+				element: <CourseDetails />,
+				loader: ({ params }) =>
+					fetch(
+						`https://learning-app-server-khaki.vercel.app/course/${params.id}`
+					),
 			},
 			{
 				path: "/title",
